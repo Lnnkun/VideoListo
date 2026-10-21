@@ -2,9 +2,9 @@ import whisper
 
 def transcribe(video_path, model_name="small"):
     """直接识别视频里的西语，返回带时间的片段"""
-    print(f"[1/2] 加载 Whisper {model_name} 模型（第一次会自动下载）...")
+    print(f"[1/3] 加载 Whisper {model_name} 模型（第一次会自动下载）...")
     model = whisper.load_model(model_name)
-    print(f"[1/2] 开始识别 {video_path} ...")
+    print(f"[1/3] 开始识别 {video_path} ...")
     result = model.transcribe(video_path, language="es")
     return result["segments"]
 
@@ -18,7 +18,7 @@ def format_time(seconds):
 
 def generate_srt(segments, output_path):
     """把片段写成 .srt 字幕文件"""
-    print(f"[2/2] 生成字幕 {output_path} ...")
+    print(f"[2/3] 生成字幕 {output_path} ...")
     with open(output_path, "w", encoding="utf-8") as f:
         for i, s in enumerate(segments):
             f.write(f"{i + 1}\n")
