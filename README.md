@@ -1,6 +1,6 @@
 **中文** | [English](README.en.md) | [Español](README.es.md)
 
-# VideoListo
+# VideoListo V1.0
 
 给西班牙语视频自动生成字幕（`.srt`），以及标题、简介、章节时间戳和标签。
 
