@@ -1,6 +1,6 @@
 [中文](README.md) | **English** | [Español](README.es.md)
 
-# VideoListo
+# VideoListo V1.0
 
 Automatically generate subtitles (`.srt`), a title, description, chapter timestamps and tags for Spanish-language videos.
 
