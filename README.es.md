@@ -1,6 +1,6 @@
 [中文](README.md) | [English](README.en.md) | **Español**
 
-# VideoListo
+# VideoListo V1.0
 
 Genera automáticamente subtítulos (`.srt`), título, descripción, capítulos con marcas de tiempo y etiquetas para vídeos en español.
 
