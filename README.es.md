@@ -32,6 +32,12 @@ python main.py video.mp4
 
 Genera `video.srt` (subtítulos) y `video_meta.md` (títulos, descripción, capítulos, etiquetas), e imprime el coste de la IA en esa ejecución.
 
+## Rendimiento
+
+Probado en una RTX 4060 (8 GB) con el modelo Whisper small.
+
+La transcripción por lotes de 19 vídeos explicativos en español (de 4 a 50 minutos cada uno, unos 336 minutos de audio en total) tardó unos 20 minutos, es decir, unas **16,6 veces la velocidad real** (un vídeo de 10 minutos en unos 36 segundos). Los tiempos incluyen la carga del modelo en cada ejecución.
+
 ## Coste
 
 Datos provisionales (Video_1, unos 4 minutos): unos 0,0018 US$; unos 0,0045 US$ para un vídeo de 10 minutos. Se sustituirán tras el Video 4.

@@ -32,6 +32,12 @@ python main.py video.mp4
 
 This produces `video.srt` (subtitles) and `video_meta.md` (titles, description, chapters, tags), and prints the AI cost of the run.
 
+## Performance
+
+Tested on an RTX 4060 (8 GB) with the Whisper small model.
+
+Batch-transcribing 19 Spanish explainer videos (4 to 50 minutes each, about 336 minutes of audio in total) took roughly 20 minutes, or about **16.6× real time** (a 10-minute video in about 36 seconds). Timings include loading the model on each run.
+
 ## Cost
 
 Placeholder figures (Video_1, about 4 minutes): about $0.0018; about $0.0045 for a 10-minute video. To be replaced after Video 4.
